@@ -10,3 +10,12 @@ int nguess=rand.nextInt(100);//random number can be generated up to 100
 int ntries=0;//counter for finding number of tries
 int guess;
 
+##### booleans
+boolean bwin=false;
+bwin=true
+
+###### while,if, else if 
+while(bwin==false)
+if(guess==nguess)//if the guess is correct
+else if (guess < nguess)//if guessed number is less than actual number
+else if (guess > nguess)//if guessed number is greater than actual number
