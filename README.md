@@ -6,6 +6,31 @@ int nguess=rand.nextInt(100);//random number can be generated up to 100
 int ntries=0;//counter for finding number of tries
 
 ## Scanner
+Scanner input =new Scanner(System.in);
+int guess;
+boolean bwin=false;
+  
+while(bwin==false)
+
+### UserInput
+System.out.println("Please guess a number :");
+guess=input.nextInt();//user input his guess
+ntries=ntries+1;//counter will increase by 1
+if(guess==nguess)//if the guess is correct
+{
+bwin=true;
+}
+else if (guess < nguess)//if guessed number is less than actual number
+{
+System.out.println(+guess+ " is too low");
+}
+else if (guess > nguess)//if guessed number is greater than actual number
+{
+System.out.println(+guess+ " is too high");
+}
+}
+  
+System.out.println("Congratulation! You guessed the number in "+ntries + " guess(es)");
 
 
 
